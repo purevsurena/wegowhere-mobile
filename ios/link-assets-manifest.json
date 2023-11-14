@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/FC-Subject-Bold.otf",
+      "sha1": "841e337f5293e200526d1b56e78f9aee9846a6e3"
+    },
+    {
+      "path": "assets/fonts/FC-Subject-Regular.otf",
+      "sha1": "552f7e4497a745019e7459475a1f4f3e6ff9861d"
+    }
+  ]
+}
