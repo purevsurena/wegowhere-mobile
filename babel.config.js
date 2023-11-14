@@ -6,7 +6,14 @@ module.exports = {
       {
         alias: {
           '@': './src',
+          '@assets': './assets',
         },
+      },
+    ],
+    [
+      'babel-plugin-inline-import',
+      {
+        extensions: ['.svg'],
       },
     ],
   ],
