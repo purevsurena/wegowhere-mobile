@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading component renders correctly with specified label and primary color 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#4AD8DA",
+        "fontFamily": "FC Subject [Non-commercial] Bd",
+        "fontSize": 18,
+        "fontStyle": "normal",
+        "fontWeight": "500",
+        "lineHeight": 25.2,
+        "textAlign": undefined,
+        "textDecorationLine": undefined,
+      },
+    ]
+  }
+>
+  Test Heading
+</Text>
+`;
