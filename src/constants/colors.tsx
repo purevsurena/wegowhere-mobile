@@ -1,4 +1,5 @@
-// Branding Colors
+import { ColorTypes } from '@/types/colors';
+
 const primary = '#4AD8DA';
 const dark = '#000000';
 const semiTransparentBlack = 'rgba(0, 0, 0, 0.4981)';
@@ -7,7 +8,7 @@ const lightGray = '#E6E3E6';
 const white = '#ffffff';
 const transparent = 'transparent';
 
-export {
+const colors: ColorTypes = {
   primary,
   dark,
   semiTransparentBlack,
@@ -16,3 +17,5 @@ export {
   white,
   transparent,
 };
+
+export default colors;
