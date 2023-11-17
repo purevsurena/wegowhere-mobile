@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Click /> matches snapshot with custom props 1`] = `
+<RNBounceable
+  disabled={true}
+  onPress={[Function]}
+  style={{}}
+  testID="click-component"
+>
+  <Text>
+    Click Me
+  </Text>
+</RNBounceable>
+`;
+
+exports[`<Click /> renders correctly 1`] = `
+<RNBounceable
+  disabled={false}
+  onPress={[Function]}
+  style={{}}
+  testID="undefined"
+>
+  <Text>
+    Click Me
+  </Text>
+</RNBounceable>
+`;
