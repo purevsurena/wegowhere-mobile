@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WhiteSpace /> renders correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "height": 12,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
