@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Flex /> renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": undefined,
+      "flex": 1,
+      "flexDirection": "row",
+      "flexWrap": undefined,
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <RNSVGText
+    content={null}
+    dx={[]}
+    dy={[]}
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+    font={{}}
+    rotate={[]}
+    x={[]}
+    y={[]}
+  >
+    <RNSVGTSpan
+      content="Child 1"
+      dx={[]}
+      dy={[]}
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+      font={{}}
+      rotate={[]}
+      x={[]}
+      y={[]}
+    />
+  </RNSVGText>
+</View>
+`;
