@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WingBlank /> renders correctly with children 1`] = `
+<View
+  style={
+    {
+      "marginLeft": 20,
+      "marginRight": 20,
+    }
+  }
+>
+  <Text>
+    Child
+  </Text>
+</View>
+`;
