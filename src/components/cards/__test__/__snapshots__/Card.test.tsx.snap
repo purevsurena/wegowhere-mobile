@@ -1,0 +1,388 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component renders correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "borderRadius": 19.5,
+      "elevation": 5,
+      "height": 358,
+      "paddingBottom": 46,
+      "paddingHorizontal": 64,
+      "paddingRight": 142,
+      "paddingTop": 56,
+      "shadowColor": "#000000",
+      "shadowOffset": {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.25,
+      "shadowRadius": 3.84,
+      "transform": [
+        {
+          "scale": 1,
+        },
+      ],
+      "width": 664,
+    }
+  }
+  testID="undefined"
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight="72"
+    bbWidth="132"
+    fill="none"
+    focusable={false}
+    height={72}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {},
+        {
+          "flex": 0,
+          "height": 72,
+          "width": 132,
+        },
+      ]
+    }
+    testID="icon-visaFilled"
+    vbHeight={15}
+    vbWidth={25}
+    width={132}
+    xml="<svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_233)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.42481 3.56744L6.17536 11.4985H4.05399L2.45572 5.16916C2.35841 4.77975 2.2736 4.63647 1.97904 4.47386C1.49656 4.20539 0.701541 3.95436 -3.05176e-05 3.79758L0.0477092 3.56744H3.46009C3.89584 3.56744 4.2873 3.86366 4.38563 4.37557L5.23072 8.96578L7.31766 3.56744H9.42481ZM17.7324 8.90947C17.741 6.8164 14.9023 6.70138 14.9227 5.76586C14.9286 5.48149 15.1931 5.17924 15.7727 5.1009C16.0611 5.06287 16.8525 5.03337 17.7505 5.45572L18.1036 3.7743C17.6212 3.5956 16.9987 3.42291 16.2275 3.42291C14.2451 3.42291 12.849 4.50171 12.837 6.04484C12.8251 7.18764 13.8331 7.82309 14.5933 8.20274C15.3752 8.59216 15.6375 8.84079 15.6338 9.18886C15.629 9.7202 15.0114 9.95533 14.4342 9.96499C13.4262 9.9811 12.8395 9.68602 12.3725 9.4644L12.0098 11.2022C12.4778 11.4227 13.3434 11.6136 14.2401 11.6232C16.3474 11.6232 17.7266 10.558 17.7324 8.90947ZM22.9684 11.4985H24.8239L23.204 3.56744H21.4908C21.1076 3.56744 20.7821 3.79758 20.6384 4.15032L17.6285 11.4985H19.7346L20.1535 10.3143H22.7262L22.9684 11.4985ZM20.7293 8.6891L21.7865 5.71059L22.3934 8.6891H20.7293ZM12.2912 3.56744L10.6327 11.4985H8.62725L10.2858 3.56744H12.2912Z" fill="#2A2A6D"/>
+</g>
+<defs>
+<clipPath id="clip0_1_233">
+<rect width="25" height="15" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGGroup
+        clipPath="clip0_1_233"
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+      >
+        <RNSVGPath
+          clipRule={0}
+          d="M9.42481 3.56744L6.17536 11.4985H4.05399L2.45572 5.16916C2.35841 4.77975 2.2736 4.63647 1.97904 4.47386C1.49656 4.20539 0.701541 3.95436 -3.05176e-05 3.79758L0.0477092 3.56744H3.46009C3.89584 3.56744 4.2873 3.86366 4.38563 4.37557L5.23072 8.96578L7.31766 3.56744H9.42481ZM17.7324 8.90947C17.741 6.8164 14.9023 6.70138 14.9227 5.76586C14.9286 5.48149 15.1931 5.17924 15.7727 5.1009C16.0611 5.06287 16.8525 5.03337 17.7505 5.45572L18.1036 3.7743C17.6212 3.5956 16.9987 3.42291 16.2275 3.42291C14.2451 3.42291 12.849 4.50171 12.837 6.04484C12.8251 7.18764 13.8331 7.82309 14.5933 8.20274C15.3752 8.59216 15.6375 8.84079 15.6338 9.18886C15.629 9.7202 15.0114 9.95533 14.4342 9.96499C13.4262 9.9811 12.8395 9.68602 12.3725 9.4644L12.0098 11.2022C12.4778 11.4227 13.3434 11.6136 14.2401 11.6232C16.3474 11.6232 17.7266 10.558 17.7324 8.90947ZM22.9684 11.4985H24.8239L23.204 3.56744H21.4908C21.1076 3.56744 20.7821 3.79758 20.6384 4.15032L17.6285 11.4985H19.7346L20.1535 10.3143H22.7262L22.9684 11.4985ZM20.7293 8.6891L21.7865 5.71059L22.3934 8.6891H20.7293ZM12.2912 3.56744L10.6327 11.4985H8.62725L10.2858 3.56744H12.2912Z"
+          fill={
+            {
+              "payload": 4280953453,
+              "type": 0,
+            }
+          }
+          fillRule={0}
+          propList={
+            [
+              "fill",
+              "fillRule",
+            ]
+          }
+        />
+      </RNSVGGroup>
+      <RNSVGDefs>
+        <RNSVGClipPath
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          name="clip0_1_233"
+        >
+          <RNSVGRect
+            fill={
+              {
+                "payload": 4294967295,
+                "type": 0,
+              }
+            }
+            height="15"
+            propList={
+              [
+                "fill",
+              ]
+            }
+            width="25"
+            x="0"
+            y="0"
+          />
+        </RNSVGClipPath>
+      </RNSVGDefs>
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <View
+    style={
+      [
+        {
+          "height": 15,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": undefined,
+        "alignSelf": undefined,
+        "flex": undefined,
+        "flexDirection": "row",
+        "flexWrap": undefined,
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#000000",
+            "fontFamily": "FC Subject [Non-commercial] Bd",
+            "fontSize": 15,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 21,
+            "opacity": 0.6,
+            "textAlign": undefined,
+            "textDecorationLine": undefined,
+          },
+        ]
+      }
+    >
+      ••••
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000000",
+            "fontFamily": "FC Subject [Non-commercial] Bd",
+            "fontSize": 15,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 21,
+            "opacity": 0.6,
+            "textAlign": undefined,
+            "textDecorationLine": undefined,
+          },
+        ]
+      }
+    >
+      ••••
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000000",
+            "fontFamily": "FC Subject [Non-commercial] Bd",
+            "fontSize": 15,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 21,
+            "opacity": 0.6,
+            "textAlign": undefined,
+            "textDecorationLine": undefined,
+          },
+        ]
+      }
+    >
+      ••••
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000000",
+            "fontFamily": "FC Subject [Non-commercial] Bd",
+            "fontSize": 15,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 21,
+            "opacity": 0.6,
+            "textAlign": undefined,
+            "textDecorationLine": undefined,
+          },
+        ]
+      }
+    >
+      3456
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "height": 14,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": undefined,
+        "alignSelf": undefined,
+        "flex": undefined,
+        "flexDirection": "row",
+        "flexWrap": undefined,
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#8F8F8F",
+            "fontFamily": "FC Subject [Non-commercial] Bd",
+            "fontSize": 10,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 14,
+            "opacity": 0.6,
+            "textAlign": undefined,
+            "textDecorationLine": undefined,
+          },
+        ]
+      }
+    >
+      Name on Card
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#8F8F8F",
+            "fontFamily": "FC Subject [Non-commercial] Bd",
+            "fontSize": 10,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 14,
+            "opacity": 0.6,
+            "textAlign": undefined,
+            "textDecorationLine": undefined,
+          },
+        ]
+      }
+    >
+      Expires
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "height": 14,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": undefined,
+        "alignSelf": undefined,
+        "flex": undefined,
+        "flexDirection": "row",
+        "flexWrap": undefined,
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#000000",
+            "fontFamily": "FC Subject [Non-commercial] Bd",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 22.4,
+            "textAlign": undefined,
+            "textDecorationLine": undefined,
+          },
+        ]
+      }
+    >
+      John Doe
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000000",
+            "fontFamily": "FC Subject [Non-commercial] Bd",
+            "fontSize": 13,
+            "fontStyle": "normal",
+            "fontWeight": "500",
+            "lineHeight": 22.4,
+            "textAlign": undefined,
+            "textDecorationLine": undefined,
+          },
+        ]
+      }
+    >
+      12/24
+    </Text>
+  </View>
+</View>
+`;
