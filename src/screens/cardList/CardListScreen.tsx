@@ -9,6 +9,7 @@ import { SCREENS } from '@/constants/screens';
 import { chargeByCard, getUserCards } from '@/api/OpnClient';
 import { CardContext } from '@/context/CardContext';
 import { formatExpirationDate } from '@/utils/Regex';
+import FadeAnimation from '@/animation/Fade';
 
 const CardListScreen = () => {
   const { cards, setCards } = React.useContext(CardContext);
@@ -63,26 +64,32 @@ const CardListScreen = () => {
       isPressBack={false}
       isLoading={isLoader}
       onPressRight={handlePressAddButton}>
-      {!isLoader && cards?.length === 0 && <EmptyCard />}
+      {!isLoader && cards?.length === 0 && (
+        <FadeAnimation isFadeIn duration={500}>
+          <EmptyCard />
+        </FadeAnimation>
+      )}
       {cards?.length > 0 && (
         <ScrollView style={styles.scrollViewContainer}>
           <WhiteSpace size="14" />
-          <WingBlank size="22">
-            {sortedCards.map(card => (
-              <View key={card.id}>
-                <Card
-                  cardHolderName={card.name}
-                  last4Digits={card.last_digits}
-                  expirationDate={formatExpirationDate(
-                    card.expiration_month,
-                    card.expiration_year,
-                  )}
-                  onPress={() => handlePayment(card.id)}
-                />
-                <WhiteSpace size="12" />
-              </View>
-            ))}
-          </WingBlank>
+          <FadeAnimation isFadeIn duration={500}>
+            <WingBlank size="22">
+              {sortedCards.map(card => (
+                <View key={card.id}>
+                  <Card
+                    cardHolderName={card.name}
+                    last4Digits={card.last_digits}
+                    expirationDate={formatExpirationDate(
+                      card.expiration_month,
+                      card.expiration_year,
+                    )}
+                    onPress={() => handlePayment(card.id)}
+                  />
+                  <WhiteSpace size="12" />
+                </View>
+              ))}
+            </WingBlank>
+          </FadeAnimation>
         </ScrollView>
       )}
     </Screen>

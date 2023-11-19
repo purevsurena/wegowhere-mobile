@@ -16,6 +16,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Heading } from '@/components/common/typography';
 import { addCardForUserByToken, createCardToken } from '@/api/OpnClient';
 import { CardTokenRequest } from '@/types/modules/Card';
+import FadeAnimation from '@/animation/Fade';
 
 const CardAddScreen = () => {
   const {
@@ -78,47 +79,49 @@ const CardAddScreen = () => {
       isLoading={isLoader}
       isPressRight={false}
       onPressLeft={goBack}>
-      <ScrollView style={styles.scrollViewContainer}>
-        <WhiteSpace size="14" />
+      <FadeAnimation isFadeIn duration={1000} style={styles.container}>
+        <ScrollView style={styles.scrollViewContainer}>
+          <WhiteSpace size="14" />
 
-        <CustomTextInput
-          type="cardnumber"
-          text={cardNumber}
-          onChangeText={setCardNumber}
-        />
-        <WhiteSpace size="22" />
-
-        <CustomTextInput
-          type="cardholder"
-          text={cardHolderName}
-          onChangeText={setCardHolderName}
-        />
-        <WhiteSpace size="22" />
-
-        <Flex flex={1} fd="row" jc="space-between">
           <CustomTextInput
-            type="expiry"
-            text={expiryDate}
-            onChangeText={setExpiryDate}
-            customStyle={{ marginRight: scale(9) }}
+            type="cardnumber"
+            text={cardNumber}
+            onChangeText={setCardNumber}
           />
-          <CustomTextInput
-            type="cvv"
-            text={CVVCode}
-            onChangeText={setCVVCode}
-            customStyle={{ marginLeft: scale(9) }}
-          />
-        </Flex>
-        <WhiteSpace size="36" />
+          <WhiteSpace size="22" />
 
-        <Flex fd="row" jc="center">
-          <Icons name="verifiedVisaCard" width={40} height={20} />
-          <WingBlank size="20">
-            <Icons name="mastercardSecureCode" width={56} height={20} />
-          </WingBlank>
-          <Icons name="omiseGrey" width={55} height={20} />
-        </Flex>
-      </ScrollView>
+          <CustomTextInput
+            type="cardholder"
+            text={cardHolderName}
+            onChangeText={setCardHolderName}
+          />
+          <WhiteSpace size="22" />
+
+          <Flex flex={1} fd="row" jc="space-between">
+            <CustomTextInput
+              type="expiry"
+              text={expiryDate}
+              onChangeText={setExpiryDate}
+              customStyle={{ marginRight: scale(9) }}
+            />
+            <CustomTextInput
+              type="cvv"
+              text={CVVCode}
+              onChangeText={setCVVCode}
+              customStyle={{ marginLeft: scale(9) }}
+            />
+          </Flex>
+          <WhiteSpace size="36" />
+
+          <Flex fd="row" jc="center">
+            <Icons name="verifiedVisaCard" width={40} height={20} />
+            <WingBlank size="20">
+              <Icons name="mastercardSecureCode" width={56} height={20} />
+            </WingBlank>
+            <Icons name="omiseGrey" width={55} height={20} />
+          </Flex>
+        </ScrollView>
+      </FadeAnimation>
 
       <Click onPress={handleSaveCard}>
         <Heading label="Save" />
@@ -130,6 +133,10 @@ const CardAddScreen = () => {
 export default CardAddScreen;
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    width: '100%',
+  },
   scrollViewContainer: {
     flex: 1,
     width: '100%',
