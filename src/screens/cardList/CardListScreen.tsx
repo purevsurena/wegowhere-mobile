@@ -1,9 +1,11 @@
 import * as React from 'react';
+import { StyleSheet } from 'react-native';
 import { Screen, WhiteSpace, WingBlank } from '@/components/layouts';
 import EmptyCard from '@/components/cards/EmptyCard';
 import Card from '@/components/cards/Card';
 import { ScrollView } from 'react-native-gesture-handler';
-import { StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { SCREENS } from '@/constants/screens';
 
 const dummyCards = [
   {
@@ -16,8 +18,19 @@ const dummyCards = [
 
 const CardListScreen = () => {
   const [cards] = React.useState(dummyCards);
+
+  const navigation = useNavigation<any>();
+
+  const handlePressAddButton = () => {
+    return navigation.navigate(SCREENS.CARD_ADD);
+  };
   return (
-    <Screen title="Cards" flex={1} ai="center">
+    <Screen
+      title="Cards"
+      flex={1}
+      ai="center"
+      isPressBack={false}
+      onPressRight={handlePressAddButton}>
       {cards.length === 0 && <EmptyCard />}
       {cards.length > 0 && (
         <ScrollView style={styles.scrollViewContainer}>
