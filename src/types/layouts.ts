@@ -93,4 +93,5 @@ export type ScreenProps = {
   isPressRight?: boolean;
   onPressLeft?: () => void;
   onPressRight?: () => void;
+  isLoading?: boolean;
 };

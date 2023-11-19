@@ -3,6 +3,7 @@ import { StatusBar, StyleSheet, View } from 'react-native';
 import { ScreenProps } from '@/types/layouts';
 import Header from '@/components/common/header/Header';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Loader from '@/components/common/loader/Loader';
 import { Colors } from '@/constants';
 
 function Screen({
@@ -19,11 +20,13 @@ function Screen({
   isPressBack,
   isPressRight,
   barStyle,
+  isLoading,
 }: ScreenProps) {
   return (
     <View style={styles.container}>
       <SafeAreaView style={styles.container}>
         <StatusBar showHideTransition="none" barStyle={barStyle} />
+        {isLoading && <Loader />}
         <Header
           isLeftIcon={isPressBack}
           isRightIcon={isPressRight}
