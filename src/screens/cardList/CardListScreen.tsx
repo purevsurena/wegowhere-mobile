@@ -23,7 +23,7 @@ const CardListScreen = () => {
 
   const fetchUserCards = async () => {
     const { data } = await getUserCards();
-    setCards(data);
+    setCards(data || []);
     setIsLoader(false);
   };
 
@@ -66,7 +66,7 @@ const CardListScreen = () => {
       onPressRight={handlePressAddButton}>
       {!isLoader && cards?.length === 0 && (
         <FadeAnimation isFadeIn duration={500}>
-          <EmptyCard />
+          <EmptyCard onPress={() => navigation.navigate(SCREENS.CARD_ADD)} />
         </FadeAnimation>
       )}
       {cards?.length > 0 && (

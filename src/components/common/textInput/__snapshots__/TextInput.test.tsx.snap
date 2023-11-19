@@ -44,6 +44,7 @@ exports[`renders CustomTextInput correctly 1`] = `
     onChangeText={[Function]}
     onFocus={[Function]}
     placeholder="0000 0000 0000 0000"
+    placeholderTextColor="#8F8F8F"
     returnKeyType="done"
     style={
       {

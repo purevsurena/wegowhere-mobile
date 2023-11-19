@@ -74,6 +74,7 @@ const CustomTextInput = ({
         value={formatTextValue()}
         keyboardType={type === 'cardholder' ? 'default' : 'numeric'}
         placeholder={placeholderMap[type]}
+        placeholderTextColor={Colors.default.mediumGray}
         style={{
           ...styles.input,
           borderColor: isFocused

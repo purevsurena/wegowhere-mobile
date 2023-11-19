@@ -2,8 +2,9 @@ import * as React from 'react';
 import { WhiteSpace, Click, Flex } from '@/components/layouts';
 import Icons from '@/components/common/images/Icons';
 import { Heading, Paragraph } from '@/components/common/typography';
+import { EmptyCardProps } from '@/types/modules/Card';
 
-const EmptyCard = () => {
+const EmptyCard = ({ onPress }: EmptyCardProps) => {
   return (
     <Flex flex={1} jc="center" ai="center">
       <Icons name="visa" width={40} height={40} />
@@ -19,7 +20,7 @@ const EmptyCard = () => {
       />
       <WhiteSpace size="14" />
 
-      <Click onPress={() => {}}>
+      <Click onPress={onPress}>
         <Heading type="Heading2" label="Add New Card" color="primary" />
       </Click>
     </Flex>

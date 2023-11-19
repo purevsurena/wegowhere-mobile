@@ -34,3 +34,7 @@ export type CardTokenResponse = {
   };
   created_at: string;
 };
+
+export type EmptyCardProps = {
+  onPress: () => void;
+};
