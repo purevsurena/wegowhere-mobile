@@ -7,9 +7,14 @@
 
 import React from 'react';
 import RootNavigation from '@/navigation/RootNavigation';
+import { CardProvider } from '@/context/CardContext';
 
 function App() {
-  return <RootNavigation />;
+  return (
+    <CardProvider>
+      <RootNavigation />
+    </CardProvider>
+  );
 }
 
 export default App;
