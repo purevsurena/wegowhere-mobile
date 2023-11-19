@@ -2,6 +2,7 @@ export type HeaderProps = {
   title: string;
   isLeftIcon?: boolean;
   isRightIcon?: boolean;
+  onPressLeft?: () => void;
   onPressRight?: () => void;
 };
 

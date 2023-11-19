@@ -30,6 +30,7 @@ exports[`<Screen /> matches snapshot with custom props 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
+          "height": 88,
           "justifyContent": "space-between",
         }
       }
@@ -66,13 +67,15 @@ exports[`<Screen /> matches snapshot with custom props 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           {
-            "paddingHorizontal": 29,
-            "paddingVertical": 20,
+            "alignItems": "center",
+            "height": 88,
+            "justifyContent": "center",
             "transform": [
               {
                 "scale": 1,
               },
             ],
+            "width": 88,
           }
         }
         testID="undefined"
@@ -195,13 +198,15 @@ exports[`<Screen /> matches snapshot with custom props 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           {
-            "paddingHorizontal": 29,
-            "paddingVertical": 20,
+            "alignItems": "center",
+            "height": 88,
+            "justifyContent": "center",
             "transform": [
               {
                 "scale": 1,
               },
             ],
+            "width": 88,
           }
         }
         testID="undefined"
@@ -325,6 +330,7 @@ exports[`<Screen /> renders correctly 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
+          "height": 88,
           "justifyContent": "space-between",
         }
       }
@@ -361,13 +367,15 @@ exports[`<Screen /> renders correctly 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           {
-            "paddingHorizontal": 29,
-            "paddingVertical": 20,
+            "alignItems": "center",
+            "height": 88,
+            "justifyContent": "center",
             "transform": [
               {
                 "scale": 1,
               },
             ],
+            "width": 88,
           }
         }
         testID="undefined"
@@ -490,13 +498,15 @@ exports[`<Screen /> renders correctly 1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           {
-            "paddingHorizontal": 29,
-            "paddingVertical": 20,
+            "alignItems": "center",
+            "height": 88,
+            "justifyContent": "center",
             "transform": [
               {
                 "scale": 1,
               },
             ],
+            "width": 88,
           }
         }
         testID="undefined"

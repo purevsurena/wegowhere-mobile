@@ -10,9 +10,14 @@ function Header({
   title,
   isLeftIcon,
   isRightIcon,
+  onPressLeft,
   onPressRight,
 }: HeaderProps & typeof HeaderDefaultProps) {
-  const handleLeftIconPress = () => {};
+  const handleLeftIconPress = () => {
+    if (onPressLeft) {
+      onPressLeft();
+    }
+  };
 
   const handleRightIconPress = () => {
     if (onPressRight) {
@@ -22,18 +27,22 @@ function Header({
 
   return (
     <View style={styles.container}>
-      {isLeftIcon && (
+      {isLeftIcon ? (
         <Click style={styles.iconStyles} onPress={handleLeftIconPress}>
           <Icons name="backIcon" width={12} height={20} />
         </Click>
+      ) : (
+        <View style={styles.boxStyles} />
       )}
 
       <Heading label={title} type="Heading2" color="dark" />
 
-      {isRightIcon && (
+      {isRightIcon ? (
         <Click style={styles.iconStyles} onPress={handleRightIconPress}>
           <Icons name="addIcon" width={23} height={23} />
         </Click>
+      ) : (
+        <View style={styles.boxStyles} />
       )}
     </View>
   );
@@ -45,12 +54,19 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
+    height: scale(44),
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   iconStyles: {
-    paddingHorizontal: scale(14.5),
-    paddingVertical: scale(10),
+    width: scale(44),
+    height: scale(44),
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  boxStyles: {
+    width: scale(44),
+    height: scale(44),
   },
 });

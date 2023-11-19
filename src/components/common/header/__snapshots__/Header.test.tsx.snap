@@ -6,6 +6,7 @@ exports[`<Header /> renders correctly 1`] = `
     {
       "alignItems": "center",
       "flexDirection": "row",
+      "height": 88,
       "justifyContent": "space-between",
     }
   }
@@ -42,13 +43,15 @@ exports[`<Header /> renders correctly 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingHorizontal": 29,
-        "paddingVertical": 20,
+        "alignItems": "center",
+        "height": 88,
+        "justifyContent": "center",
         "transform": [
           {
             "scale": 1,
           },
         ],
+        "width": 88,
       }
     }
     testID="undefined"
@@ -171,13 +174,15 @@ exports[`<Header /> renders correctly 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       {
-        "paddingHorizontal": 29,
-        "paddingVertical": 20,
+        "alignItems": "center",
+        "height": 88,
+        "justifyContent": "center",
         "transform": [
           {
             "scale": 1,
           },
         ],
+        "width": 88,
       }
     }
     testID="undefined"
