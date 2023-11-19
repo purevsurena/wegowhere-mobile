@@ -25,7 +25,11 @@ function Screen({
   return (
     <View style={styles.container}>
       <SafeAreaView style={styles.container}>
-        <StatusBar showHideTransition="none" barStyle={barStyle} />
+        <StatusBar
+          showHideTransition="none"
+          barStyle={barStyle}
+          backgroundColor={Colors.default.white}
+        />
         {isLoading && <Loader />}
         <Header
           isLeftIcon={isPressBack}
