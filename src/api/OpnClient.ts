@@ -15,7 +15,7 @@ const baseUrl = Config.API_URL;
 const baseOmiseVaultURL = Config.TOKEN_API_URL;
 const secretKey = Config.SECRET_KEY;
 const publicKey = Config.PUBLIC_KEY;
-const testUserId = 'cust_test_5wk16v1dfui9wddjdb2';
+const testUserId = 'cust_test_5xts9afpsqnpa2ibcqq';
 
 const generateRandomAmount = () =>
   Math.floor(Math.random() * (100000 - 10000 + 1)) + 10000;
