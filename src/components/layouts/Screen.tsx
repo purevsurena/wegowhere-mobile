@@ -14,6 +14,7 @@ function Screen({
   ai,
   jc,
   flex,
+  onPressLeft,
   onPressRight,
   isPressBack,
   isPressRight,
@@ -26,6 +27,7 @@ function Screen({
         <Header
           isLeftIcon={isPressBack}
           isRightIcon={isPressRight}
+          onPressLeft={onPressLeft}
           onPressRight={onPressRight}
           title={`${title}`}
         />
