@@ -19,3 +19,10 @@ export const formatExpiryDate = (input: string) => {
 
   return { formattedDisplay, numericInput };
 };
+
+export const formatExpirationDate = (month: string, year: string) => {
+  const formattedMonth: string = String(month).padStart(2, '0');
+  const formattedYear: string = String(year).slice(-2);
+
+  return `${formattedMonth}/${formattedYear}`;
+};
