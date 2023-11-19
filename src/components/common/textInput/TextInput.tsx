@@ -48,19 +48,19 @@ const CustomTextInput = ({
         return text;
       }
     } else {
-      text;
+      return text;
     }
   };
 
   const handleChangeText = (input: string) => {
-    if (type === 'cardholder') {
+    if (type === 'cardnumber') {
       const { numericInput } = formatCreditCardNumber(input);
       onChangeText(numericInput);
     } else if (type === 'expiry') {
       const { numericInput } = formatExpiryDate(input);
       onChangeText(numericInput);
     } else {
-      onChangeText(text);
+      onChangeText(input);
     }
   };
 
@@ -84,6 +84,7 @@ const CustomTextInput = ({
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
         returnKeyType="done"
+        keyboardAppearance="dark"
       />
       {type === 'cardnumber' && (
         <Flex fd="row" style={styles.cardIconStyles}>
@@ -109,6 +110,7 @@ const styles = StyleSheet.create({
     borderWidth: mScale(1.5),
     padding: scale(10),
     fontFamily: fonts.main.FC_SUBJECT_REGULAR,
+    color: Colors.default.dark,
     fontSize: scale(16),
     fontWeight: '400',
     lineHeight: scale(0),

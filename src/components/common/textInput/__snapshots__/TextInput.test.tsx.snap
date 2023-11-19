@@ -37,6 +37,7 @@ exports[`renders CustomTextInput correctly 1`] = `
     }
   />
   <TextInput
+    keyboardAppearance="dark"
     keyboardType="numeric"
     maxLength={19}
     onBlur={[Function]}
@@ -49,6 +50,7 @@ exports[`renders CustomTextInput correctly 1`] = `
         "borderColor": "#E6E3E6",
         "borderRadius": 12,
         "borderWidth": 2.25,
+        "color": "#000000",
         "fontFamily": "FC Subject [Non-commercial] Reg",
         "fontSize": 32,
         "fontWeight": "400",
